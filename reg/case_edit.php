@@ -36,7 +36,7 @@
             $this->addElement('text',     'last_name',       'Фамилия',          array('class'=>'edt_100'));
             $this->addElement('text',     'first_name',      'Имя',              array('class'=>'edt_100'));
             $this->addElement('text',     'patr_name',       'Отчество',         array('class'=>'edt_100'));
-            $this->addElement('select',   'is_male',         'Пол', array(0=>'-Не указан-', 1=>'Мужской',2=>'Женский'));
+            /*$this->addElement('select',   'is_male',         'Пол', array(0=>'-Не указан-', 1=>'Мужской',2=>'Женский'));
             $this->addElement('dateex',   'born_date',       'Дата рождения',    array('language' => 'ru', 'format'=>'dMY', 'minYear'=>1900, 'maxYear'=>gMaxYear, 'addEmptyOption'=>true));
 
             $this->addElement('select',   'doc_type_id',     'Документ', $vDB->GetRBList('rb_doc_types','id', 'name', true));
@@ -61,7 +61,7 @@
             $this->addElement('text',     'polis_number',        'номер',            array('class'=>'edt_100'));
             $this->addElement('select',   'paytype',             'тип',              array(0=>'ОМС', 1=>'ДМС', 2=>'Платные услуги'));
 
-     /*Дата действия полиса*/
+     /*Дата действия полиса
             $this->addElement('dateex',   'patient_polis_from',  'Действителен с',   array('language' => 'ru', 'format'=>'dMY', 'minYear'=>1900, 'maxYear'=>gMaxYear,'addEmptyOption'=>true));
             $this->addElement('dateex',   'patient_polis_to',    'по',               array('language' => 'ru', 'format'=>'dMY', 'minYear'=>1900, 'maxYear'=>gMaxYear,'addEmptyOption'=>true));
 
@@ -76,7 +76,7 @@
             $this->addElement('checkbox', 'animal_bite_trauma',  'Укус животного');
             $this->addElement('checkbox', 'ixodes_trauma',       'Укус клеща');
             $this->addElement('text',     'message_number',      'Номер телефонограммы',   array('class'=>'edt_100'));
-            $this->addElement('textarea', 'notes',               'Дополнительные сведения', array('rows' => 6, 'cols' => 44));
+            $this->addElement('textarea', 'notes',               'Дополнительные сведения', array('rows' => 6, 'cols' => 44));*/
 
             $this->addElement('submit',   'Submit',              'Ok');
             $this->applyFilter('_ALL_',   'trim');
